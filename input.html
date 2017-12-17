@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+	body { font: 14px/28px "微软雅黑" ;}
+	ul {
+			padding: 0;
+			margin: 0;
+			list-style:none;
+		}
+	.contract  *:focus{
+		outline: none;
+	}
+	.contract {
+		 width: 700px;
+		 height: auto;
+		 background : #F6F6F6;
+		 margin: 40px auto;
+		 padding: 10px;
+		}
+		.contract ul {width: 700px;}
+		.contract ul li {
+			border-bottom: 1px solid #ccc;
+			padding: 12px;
+			}
+		.contract ul li label {
+				width: 120px;
+				display: inline-block;
+				float: left;
+			}
+		.contract ul li input[type="text"] {
+			width: 220px;
+			height: 20px;
+			border: 1px solid #AAAAAA;
+			padding: 3px 8px;
+			color: #CCC;
+			border-radius:5px;
+			background: url("images/red_asterisk.png")  no-repeat #FFF 98%;
+			}
+			.contract ul li input:focus {
+				border-color: #c00;
+				background-image:url(images/invalid.png);
+			}
+		.contract ul li input[type="text"]  {
+			transition: padding .25s;
+		}
+		.contract ul li input:focus {
+			padding-right: 70px;
+		}
+</style>
+</head>
+
+<body>
+	<div class="contract">
+    	<form action="#" method="post" name="c1">
+        	<ul>
+            	<li>
+                	<label>姓名：</label>
+                    <input type="text" placeholder="sunTest" required />
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>
